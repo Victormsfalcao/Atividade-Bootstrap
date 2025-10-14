@@ -1,0 +1,9 @@
+@media (max-width: 576px) {
+  .form-label {
+    font-size: 0.95rem;
+  }
+  input,
+  select {
+    font-size: 0.95rem;
+  }
+}

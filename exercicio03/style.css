@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Space Grotesk", Arial, sans-serif;
+    background-color: #000;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+    padding-top: 90px;
+    /* espaço para navbar fixed-top */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #000 !important;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-brand img {
+    display: block;
+    max-height: 56px;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    padding: 0.5rem 0.9rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #f1f1f1 !important;
+}
+
+.botao-header {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-header:hover,
+.botao-header:focus {
+    background-color: #e65500;
+}
+
+/* hero */
+.hero-section {
+    background-image: url("/exercicio03/img/Gym.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+}
+
+.hero-section h1,
+.hero-section .lead {
+    color: #ffffff;
+}
+
+span {
+    color: orange;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-item p {
+    color: #fff;
+    font-style: italic;
+    margin-bottom: 10px;
+    max-width: 450px;
+    /* diminui a largura do texto */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    /* reduz um pouco o tamanho da fonte */
+}
+
+
+.carousel-item img {
+    height: 240px;
+    /* altura fixa */
+    /* ajusta o enquadramento */
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* imagens do carrossel em tamanho médio e responsivas */
+.carousel-inner .carousel-item img.carousel-img {
+    max-width: 480px;
+    /* largura máxima média */
+    max-height: 360px;
+    /* altura máxima para manter proporção */
+    width: 100%;
+    /* escala conforme o container */
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* reduz um pouco em telas muito pequenas */
+@media (max-width: 576px) {
+    .carousel-inner .carousel-item img.carousel-img {
+        max-width: 320px;
+        max-height: 240px;
+    }
+}
+
+.card-treino {
+    background-color: #e65500;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+
+}
+
+.back-depoimentos {
+    background-color: #636160;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.text-orange {
+    color: #ff5c1c;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 92, 28, 0.3);
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.text-orange {
+    color: #ff5c1c;
+}
+
+.stat-card {
+    background: linear-gradient(180deg, #ff5c1c, #ff3d00);
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 92, 28, 0.3);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(255, 92, 28, 0.5);
+}
+
+.stat-card p {
+    margin: 0;
+    font-weight: 500;
+}
+
+
+
+
+.accordion-button {
+    background-color: #f2f2f2;
+    color: #000;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #dcdcdc;
+    color: #000;
+}
+
+.accordion-button::after {
+    background-image: none;
+    content: "⌄";
+    font-size: 20px;
+    color: #ff4d00;
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+
+.accordion-body {
+    background-color: #555;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+h5 {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+.footer-pagina a {
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.nav-item {
+    color: white;
+}
+
+
+button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
